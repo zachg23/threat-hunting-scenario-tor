@@ -46,7 +46,7 @@ DeviceFileEvents
 
 // TOR Browser being silently installed
 DeviceProcessEvents
-| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-14.0.1.exe /S"
+| where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-15.0.1.exe /S"
 | project Timestamp, DeviceName, ActionType, FileName, ProcessCommandLine
 
 // TOR Browser or service was successfully installed and is present on the disk
